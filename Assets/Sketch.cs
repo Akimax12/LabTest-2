@@ -58,7 +58,7 @@ public class Sketch : MonoBehaviour {
             {
                 var newCube = (GameObject)Instantiate(myPrefab, new Vector3(x, y, z), Quaternion.identity);
                 newCube.GetComponent<CubeScript>().SetSize(town.Size);
-                newCube.GetComponent<Renderer>().material.color = Color.black;
+                
                 //newCube.GetComponent<CubeScript>().rotateSpeed = .2f + perc * 4.0f;
                 newCube.transform.Find("New Text").GetComponent<TextMesh>().text = town.TownName;//"Hullo Again";
                 i++;
